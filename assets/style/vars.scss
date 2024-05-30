@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+$greyish-blue: var(--greyish);
+$semi-dark-blue: var(--second-color);
+$dark-blue: var(--background);
+$red: var(--red);
+$title: var(--title);
+$text: var(--text);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $dark-blue;
+}
+
+html.dark {
+  --greyish: #5a698f;
+  --second-color: #161d2f;
+  --background: #10141e;
+  --red: #fc4747;
+  --title: #fff;
+  --text: #ffffff95;
+}
+
+html.light {
+  --greyish: #afa193;
+  --second-color: #f7f7f2;
+  --background: #e4e6c3;
+  --red: #af2a25;
+  --title: #000;
+  --text: #00000095;
+}
+
+html.third {
+  --greyish: #afa193;
+  --second-color: #8d86c9;
+  --background: #242038;
+  --red: #af2a25;
+  --title: #fff;
+  --text: #ffffff95;
+}
+
+// Шаблон для заголовка L
+@mixin heading-L {
+  font-family: "Outfit", sans-serif;
+  font-weight: 200; // Легкий
+  font-size: 32px;
+}
+
+// Шаблон для заголовка M
+@mixin heading-M {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400; // Обычный
+  font-size: 24px;
+}
+
+// Шаблон для заголовка S
+@mixin heading-S {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400; // Обычный
+  font-size: 24px;
+}
+
+// Шаблон для заголовка XS
+@mixin heading-XS {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300; // Легкий
+  font-size: 18px;
+}
+
+@mixin text-M {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300; // Легкий
+  font-size: 18px;
+}
+
+@mixin text-S {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300; // Легкий
+  font-size: 15px;
+}
+
+@mixin text-login {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300; // Легкий
+  font-size: 15px;
+}
+
+@mixin text-sign-up {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300; // Легкий
+  font-size: 15px;
+  color: #fc4747;
+}

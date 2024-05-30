@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/clapperboard.png" />
+    <link rel="stylesheet" href="./assets/style/GlobalStyle/normalize.css" />
+    <link rel="stylesheet" href="./assets/style/main.scss"/>
+    <title>Entertainment web app</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <nav>
+        <div class="nav__wrap nav__bg">
+          <div class="nav__main nav__bg">
+            <a class="nav__bg" href="^#">
+              <img src="./assets/logo.svg" alt=""
+            /></a>
+
+            <div class="nav__theme">
+              <div>
+                <input
+                  type="radio"
+                  name="dark-theme"
+                  class="nav__theme-radio"
+                  id="theme-dark"
+                  value="dark"
+                />
+                <label class="dark-label label" for="theme-dark"></label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="light-theme"
+                  class="nav__theme-radio"
+                  id="theme-light"
+                  value="light"
+                />
+                <label class="light-label label" for="theme-light"></label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="third-theme"
+                  class="nav__theme-radio"
+                  id="theme-third"
+                  value="third"
+                />
+                <label class="third-label label" for="theme-third"></label>
+              </div>
+            </div>
+          </div>
+          <div class="nav__bg nav__navigation">
+            <button id="homeButton">
+              <img
+                class="nav__bg nav__icon nav__icon-home"
+                src="./assets/icon-nav-home.svg"
+                alt="Home"
+                data-alt="./assets/icon-nav-home.svg"
+              />
+            </button>
+
+            <button id="moviesButton">
+              <img
+                class="nav__bg nav__icon nav__icon-movie"
+                src="./assets/icon-nav-movies.svg"
+                alt="Movie-icon"
+                data-alt="./assets/icon-category-movie.svg"
+              />
+            </button>
+
+            <button id="seriesButton">
+              <img
+                class="nav__bg nav__icon nav__icon-series"
+                src="./assets/icon-nav-tv-series.svg"
+                alt="Series-icon"
+                data-alt="./assets/icon-category-tv.svg"
+              />
+            </button>
+
+            <button id="bookmarkButton">
+              <img
+                class="nav__bg nav__icon nav__icon-bookmark"
+                src="./assets/icon-nav-bookmark.svg"
+                alt="Bppkmark icon"
+                data-alt="./assets/icon-bookmark-full.svg"
+              />
+            </button>
+          </div>
+          <div class="nav__bg nav__profile">
+            <div class="nav__bg nav__imgBox">
+              <a class="nav__bg" href="./login.html"
+                ><img class="nav__bg" src="./assets/image-avatar.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="wrapper-main">
+        <form class="searchForm" id="searchForm">
+          <button class="searchButton" type="submit">
+            <img src="/assets/icon-search.svg" alt="search" />
+          </button>
+          <input
+            name="inputSearch"
+            id="inputSearch"
+            type="text"
+            class="inputSearch"
+            placeholder="Search for movies or TV series"
+          />
+        </form>
+        
+        <div class="trendingMovies">
+          <h2 class="trendingTitle">Trending</h2>
+          <div class="trendingMoviesContainer"></div>
+          <div class="error"></div>
+      <div class="modal"></div>
+        </div>
+        <!-- Display recommended shows -->
+        <h2 id="recommended" class="titleRecom">Recommended for you</h2>
+        <div class="container-main">
+          <div class="modal"></div>
+          <div class="errorMessage"></div>
+        </div>
+    </div>
+
+    <script src="./src/main.js"></script>
+    <script src="./src/side-nav.js"></script>
+    <script src="./src/trending.js"></script>
+    <script src="./src/color-theme.js"></script>
+  </body>
+</html>

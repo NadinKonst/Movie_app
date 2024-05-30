@@ -1,0 +1,52 @@
+@import "./vars.scss";
+
+body {
+    background-color: #10141E;
+}
+
+h1 {
+    @include heading-L;
+    color: grey;
+}
+.card1-head {
+    @include heading-M;
+    margin-bottom: 10px;
+}
+.card1 {
+    @include text-M;
+    border: 1px solid #5A698F;
+    border-radius: 10px;
+    padding: 10px;
+    width: 70vw;
+    margin: 20px;
+    color: grey;
+}
+.cardAcc {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.cardAvatar {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    position: relative;
+    text-align: center;
+}
+input[type="file"] {
+    display: none;
+}
+.divBut {
+    font-size: larger;
+    font-weight: 800;
+    color: white;
+    position: absolute;
+    top: 60%;
+    bottom: 45%;
+    left: 5px;
+    right: 5px;
+}
+.hide {
+    display: none;
+}

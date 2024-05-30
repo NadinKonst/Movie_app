@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./assets/style/login.scss">
+  <title>Entertainment web app</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="icon">
+      <a class="nav__bg" href="./index.html">
+        <img src="./assets/logo.svg" alt="icon"
+      /></a>
+    </div>
+    <div class="wrapper__form">
+      <form action="" class="form">Sign up
+        <input type="email" class="form__input email-input" id="email-input" placeholder="Email address" >
+        <input type="password" class="form__input pass-input" id="pass-input" placeholder="Password" >
+        <input type="password" class="form__input pass-input" id="second-pass-input" placeholder="Repeat password" >
+        <p class="warning"></p>
+        <button class="form__btn">Create an account</button>
+      </form>
+      <div class="sign-up__info">
+        <p class="sign-up__title">Already have an account?</p>
+        <a class="sign-up__page" href="./login.html">Login</a>
+      </div>
+    </div>
+  </div>
+  
+  <script src="./src/sign-up.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/clapperboard.png"/>
+    <link rel="stylesheet" href="./assets/style/GlobalStyle/normalize.css" />
+    <link rel="stylesheet" href="./assets/style/main.scss" />
+    <link rel="stylesheet" href="./assets/style/side-nav.scss" />
+    <link rel="stylesheet" href="./assets/style/profile-style.scss">
+    <title>Entertainment web app</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <nav>
+        <aside class="nav__bg nav__wrap">
+          <div class="nav__bg nav__main">
+            <a class="nav__bg" href="^#">
+              <img src="./assets/logo.svg" alt=""
+            /></a>
+          </div>
+          <div class="nav__bg nav__navigation">
+            <button>
+              <img
+                class="nav__bg nav__icon nav__icon-home"
+                src="./assets/icon-nav-home.svg"
+                alt="Home"
+                data-alt="./assets/icon-nav-home.svg"
+              />
+            </button>
+
+            <button>
+              <img
+                class="nav__bg nav__icon nav__icon-movie"
+                src="./assets/icon-nav-movies.svg"
+                alt="Movie-icon"
+                data-alt="./assets/icon-category-movie.svg"
+              />
+            </button>
+
+            <button>
+              <img
+                class="nav__bg nav__icon nav__icon-series"
+                src="./assets/icon-nav-tv-series.svg"
+                alt="Series-icon"
+                data-alt="./assets/icon-category-tv.svg"
+              />
+            </button>
+
+            <button>
+              <img
+                class="nav__bg nav__icon nav__icon-bookmark"
+                src="./assets/icon-nav-bookmark.svg"
+                alt="Bookmark icon"
+                data-alt="./assets/icon-bookmark-full.svg"
+              />
+            </button>
+          </div>
+          <div class="nav__bg nav__profile">
+            <div class="nav__bg nav__imgBox">
+              <a class="nav__bg" href="/profile-page.html"
+                ><img class="nav__bg" src="./assets/image-avatar.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </aside>
+      </nav>
+      <div class="wrapper-main">
+    </div>
+    <div>
+        <h1>Profile settings</h1>
+        
+        <div class="card1 cardAcc">
+          <div class="cardAvatar">
+            <img src="./assets/image-avatar.png" alt="avatar">
+            <label for="avatarImg" class="divBut hide">...</label>
+            <input type="file" id="avatarImg">
+          </div>  
+          <div><p class="card1-head">Account</p>
+            <p class="email">Email address:</p>
+            <p class="pass">Password:</p>
+            <p>Nickname:</p>
+          </div>
+        </div>
+        <div class="card1">
+          <p class="card1-head">Subscription</p>
+            <p>Your subscription will expire in ... days</p>
+            <p>on ...</p>
+        </div>
+        <div class="card1">
+          <p class="card1-head">Devices</p>
+            <p>Recent devices:</p>
+        </div>
+        <div class="card1">
+          <p class="card1-head">Info</p>
+            <p>Version:</p>
+            <p>Platform:</p>
+            <p id="time">Current time:</p>
+        </div>
+    </div>
+    <script src="./src/side-nav.js"></script>
+    <script src="./src/profile-page.js"></script>
+  </body>
+</html>

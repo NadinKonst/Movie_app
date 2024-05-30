@@ -1,0 +1,44 @@
+@import "./vars.scss";
+@import "./modal_windows.scss";
+@import "./trending.scss";
+@import "./trending-modal.scss";
+@import "./side-nav.scss";
+@import "./pagination.scss";
+@import "./recommended.scss";
+
+.searchForm {
+  display: flex;
+  gap: 24px;
+  .searchButton {
+    img {
+      @media screen and (max-width: 376px) {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+  .inputSearch {
+    width: 100%;
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    background-color: $dark-blue;
+    @media screen and (max-width: 376px) {
+      font-size: 16px;
+    }
+    border: none;
+    color: white;
+    border-bottom: 1px solid transparent;
+    &:focus {
+      outline: none;
+      border-bottom: 1px solid #979797;
+      caret-color: $red;
+    }
+  }
+}
+.notFoundText {
+  @include text-M;
+  padding: 10px;
+  color: white;
+}
+

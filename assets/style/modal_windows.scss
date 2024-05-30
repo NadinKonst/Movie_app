@@ -1,0 +1,130 @@
+@import 'vars';
+
+.wrapper-main {
+  .modal-backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.367);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .modal-content {
+      position: relative;
+      background-color: $semi-dark-blue;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(216, 216, 216, 0.08);
+      width: 50%;
+      padding: 3rem;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+
+      @media screen and (max-width: 768px) {
+        width: 80%;
+        height: 80%;
+      }
+
+      .modal-movie-img {
+        width:100%;
+        max-width: 250px;
+        max-height: 350px;
+        object-fit: cover;
+        border-radius: 10px;
+        display: block;
+        margin: 0 auto;
+
+        @media screen and (max-width: 768px) {
+          max-width: 320px;
+        }
+        @media screen and (max-width: 376px) {
+          max-width: 280px;
+        }
+      }
+
+      .modal-title {
+        @include heading-L;
+        color: $title;
+        margin: 15px 0;
+
+        @media screen and (max-width: 768px) {
+          @include heading-M;
+          margin: 8px 0;
+        }
+        @media screen and (max-width: 376px) {
+          @include heading-XS;
+          margin: 5px 0;
+        }
+      }
+
+      .modal-year,
+      .modal-genre,
+      .modal-site {
+        @include text-M;
+        color: $text;
+        margin-bottom: 18px;
+        overflow-wrap: break-word;
+        white-space: pre-wrap;
+
+        @media screen and (max-width: 768px) {
+          @include text-S;
+          margin-bottom: 12px;
+        }
+        @media screen and (max-width: 376px) {
+          margin-bottom: 8px;
+        }
+      }
+      .modal-description {
+        @include text-S;
+        color: $text;
+      }
+      .modal-site-link{
+        color: $red;
+        font-size: 20px;
+        text-decoration: none;
+        &:hover{
+          color: #f34f4d;
+          text-decoration: underline;
+        }
+      }
+      .closeButton {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        width: 30px;
+        height: 30px;
+        border: none;
+        border-radius: 100%;
+        background-color: $red;
+        color: white;
+        cursor: pointer;
+        @include heading-S;
+        @media screen and (max-width: 768px) {
+          width: 20px;
+          height: 20px;
+          @include text-S;
+          color: white;
+        }
+        @media screen and (max-width: 376px) {
+          width: 18px;
+          height: 18px;
+          @include text-S;
+          color: white;
+        }
+
+        &:hover {
+          background-color: #be2424;
+        }
+      }
+    }
+  }
+}
+.disable-scroll{
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+};
+

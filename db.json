@@ -1,0 +1,44 @@
+{
+  "userData": [
+    {
+      "email": "11@gmail.com",
+      "password": 123456,
+      "id": 1
+    },
+    {
+      "email": "polina1086@mail.ru",
+      "password": "qwerty",
+      "id": 2
+    },
+    {
+      "email": "polina086@mail.ru",
+      "password": "123456",
+      "id": 3
+    },
+    {
+      "email": "polina2086@mail.ru",
+      "password": "123456",
+      "id": 4
+    },
+    {
+      "email": "polinaq086@mail.ru",
+      "password": "qwerty",
+      "id": 5
+    },
+    {
+      "email": "polinaqw086@mail.ru",
+      "password": "qwerty",
+      "id": 6
+    },
+    {
+      "email": "polina11086@mail.ru",
+      "password": "123456",
+      "id": 7
+    },
+    {
+      "email": "123456@mail.com",
+      "password": "1234567",
+      "id": 8
+    }
+  ]
+}

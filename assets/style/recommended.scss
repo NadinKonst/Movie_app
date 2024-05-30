@@ -1,0 +1,256 @@
+@import "./vars.scss";
+
+
+.wrapper-main {
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+  
+    @media screen and (max-width: 376px) {
+      margin-top: 10px;
+    }
+  
+    @media screen and (max-width: 768px) {
+      margin-top: 15px;
+    }
+    .modal-backdrop {
+      z-index: 5;
+    }
+    .titleRecom {
+      @include heading-L;
+      color: $title;
+      margin-bottom: 30px;
+      padding: 10px;
+  
+      @media screen and (max-width: 376px) {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 25px;
+        margin-bottom: 10px;
+      }
+    }
+  
+    .container-main {
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(6, auto);
+      justify-content: center;
+      align-content: center;
+  
+      @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      @media screen and (max-width: 376px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+  
+      .movieCard {
+        width: 80%;
+        border-radius: 10px;
+        padding: 10px;
+  
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.05);
+        }
+
+
+          .movieCover {
+            position: relative;
+            width: 100%;
+            height: 70%;
+            border-radius: 10px;
+            position: relative;
+            &:hover {
+              box-shadow: 0 0 20px rgba(143, 143, 143, 0.5);
+            }
+            @media screen and (max-width: 376px) {
+              height: 58%;
+            }
+            
+          }
+            
+            .playButton {
+              opacity: 0;
+              position: absolute;
+              top: 45%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 8rem;
+              height: 3rem;
+              background-color: rgba(139, 135, 135, 0.6);
+              text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+              @include heading-XS;
+              color: $title;
+              padding: 10px 20px;
+              border: none;
+              border-radius: 3rem;
+              cursor: pointer;
+              text-align: center;
+            
+              @media screen and (max-width: 376px) {
+                width: 4.5rem;
+                height: 1.3rem;
+                top: 35%;
+                left: 50%;
+                padding-bottom: 2rem;
+                @include text-S;
+                color: $text;
+                color: white;
+              }
+              &:hover{
+                opacity: 1;
+              }
+            }
+
+            .bookmarkButton{
+              top: 45%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 3rem;
+              height: 3rem;
+              background-color: rgba(139, 135, 135, 0.6);
+              text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+              @include heading-XS;
+              color: $title;
+              padding: 10px 20px;
+              border: none;
+              border-radius: 3rem;
+              cursor: pointer;
+              text-align: center;
+            }
+  
+        .movieInfo {
+          width: 100%;
+          margin-top: 5px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          @include text-S;
+          color: $text;
+
+          @media screen and (max-width: 376px) {
+            font-size: 9px;
+          }
+  
+          .movieYear,
+          .movieCategory,
+          .movieRating {
+            display: inline-block;
+            position: relative;
+            margin-right: 25px;
+  
+            &:last-child {
+              margin-right: 0;
+            }
+            @media screen and (max-width: 768px){
+              margin-right: 14px;
+            }
+            @media screen and (max-width: 376px) {
+              margin-right: 12px;
+            }
+          }
+  
+          .movieCategory::before {
+            content: url("/assets/icon-category-tv.svg");
+            margin-right: 5px;
+          }
+  
+          .movieYear::after,
+          .movieCategory::after {
+            content: "●";
+            position: absolute;
+            margin-left: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            @media screen and (max-width: 768px){
+              content: none;
+            }
+          }
+  
+          .movieYear::after {
+            left: 35px;
+          }
+  
+          @media screen and (max-width: 768px) {
+              .movieCategory::before {
+                display: none;
+              }
+            }
+            .movieRating::after {
+              content: "★";
+              margin-left: 3px;
+            }
+        }
+  
+        .movieTitle {
+          margin: 15px 0;
+          text-align: center;
+          @include heading-XS;
+          color: $title;
+          @media screen and (max-width: 376px) {
+            margin-top: 7px;
+            @include text-S;
+            color: $title;
+          }
+          &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+          }
+        }
+      }
+      .errorMessage{
+          width: 100%;
+          @include heading-XS;
+          color: $red;
+          grid-column: 1 / -1;
+          text-align: center;
+          .error-img{
+              width: 3.5rem;
+              margin-bottom: 1rem;
+          }
+          .error-title{
+              margin-bottom: 1.3rem;
+          }
+      }
+    }
+}  
+
+html.light {
+  .wrapper-main{
+    .container-main{
+      .movieCard{
+        .movieCover{
+          &:hover{
+            box-shadow: 0 0 30px rgba(46, 47, 94, 0.801);
+          }
+        }
+        .movieCategory::before {
+          filter: invert(100%);
+        }
+      }
+      .errorMessage{
+        .error-img{
+          filter: invert(80%);
+        }
+      }
+    }
+  }
+}
+
+.clearAllButton {
+  background-color: #ff0000;
+  color: #fff;
+  padding: 20px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.clearAllButton:hover {
+  background-color: #cc0000;
+}
