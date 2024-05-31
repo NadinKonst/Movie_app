@@ -10,8 +10,8 @@ This project allows users to select a movie or TV series according to their pref
 
 ## Getting started
 
-Enter the command ```npm install```
-Enter the command ```npm run start```
+1. Enter the command ```npm install```
+2. Enter the command ```npm run start```
 
 
 
