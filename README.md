@@ -20,4 +20,4 @@ This project allows users to select a movie or TV series according to their pref
 
 
 ## Thanks to all Contributors
-[![Contributors](https://contrib.rocks/image?repo=AlenaGM/Mogu-Travel)](https://github.com/AleksandrovaPolina/Entertainment-web-app/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=AleksandrovaPolina/Entertainment-web-app)](https://github.com/AleksandrovaPolina/Entertainment-web-app/graphs/contributors)
