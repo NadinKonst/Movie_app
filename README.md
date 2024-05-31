@@ -1,5 +1,5 @@
-## Educational project
-### fe-80__group2
+## Movie App
+
 ***
 This project allows users to select a movie or TV series according to their preferences, shows what is currently trending and gives them the opportunity to add movies to favorites.
 ***
